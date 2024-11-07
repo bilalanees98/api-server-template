@@ -1,0 +1,53 @@
+// {
+//   "compilerOptions": {
+//     "target": "es6",
+//     "module": "commonjs",
+//     "lib": ["es6", "es2017", "esnext.asynciterable"],
+//     "baseUrl": "src",
+//     "rootDir": "./src",
+//     "outDir": "./dist",
+//     "inlineSources": true,
+//     "sourceRoot": "/",
+//     "sourceMap": true,
+//     "moduleResolution": "node",
+//     "removeComments": true,
+//     "allowSyntheticDefaultImports": true,
+//     "esModuleInterop": true,
+//     "emitDecoratorMetadata": true,
+//     "experimentalDecorators": true,
+//     "resolveJsonModule": true,
+//     "skipDefaultLibCheck": true,
+//     "skipLibCheck": true,
+//     "typeRoots": ["./node_modules/@types"],
+//     "noImplicitReturns": true,
+//     "noFallthroughCasesInSwitch": true
+//   },
+//   "include": ["./src"],
+//   "exclude": ["./node_modules"]
+// }
+
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "lib": ["es6", "es2017", "esnext.asynciterable"],
+    "sourceMap": true,
+    "outDir": "./dist",
+    "moduleResolution": "node",
+    "removeComments": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "typeRoots": ["./src/types", "./node_modules/@types"],
+    "baseUrl": "src/",
+    "rootDir": "./src",
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true
+  },
+  "include": ["./src/**/*.tsx", "./src/**/*.ts"],
+  "exclude": ["node_modules", "test/**/*.ts"]
+}
